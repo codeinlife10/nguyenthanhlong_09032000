@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCoJSzVPSSLSF6VefZRlsDwLSRervNuEGoOQ&usqp=CAU"
+            alt="">
+        <h1>Welcome to <br> Covid's Information</h1>
+    </nav>
+
+
+    <!-- <div id="history" class="dropdown-menu">
+         Cho phép chọn thông tin tối đa 7 ngày trước 
+        <li><a class="dropdown-item" href="#">Action</a></li>
+      </div> -->
+    <div class="main-content">
+        <div class="ultis">
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Today
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="#">1 day before</a>
+                    <a class="dropdown-item" href="#">2 days before</a>
+                    <a class="dropdown-item" href="#">3 days before</a>
+                    <a class="dropdown-item" href="#">4 days before</a>
+                    <a class="dropdown-item" href="#">5 days before</a>
+                    <a class="dropdown-item" href="#">6 days before</a>
+                    <a class="dropdown-item" href="#">7 days before</a>
+
+                </div>
+            </div>
+            <h3>Covid 19 Dashboard</h3>
+            <div class="search">
+                <div class="input-group">
+                    <div class="form-outline">
+                        <input type="search" id="search" placeholder="Search for your country" class="form-control" />
+                    </div>
+                    <button id="searchBtn" type="button" class="btn btn-primary">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div id="slideshow-container" class="slideshow-container">
+            <a style="color: red;" class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a style="color: red;" class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+    </div>
+
+
+    <script defer src="index.js"></script>
+</body>
+
+</html>
